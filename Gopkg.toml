@@ -1,0 +1,7 @@
+[[constraint]]
+  branch = "v1"
+  name = "gopkg.in/gavv/httpexpect.v1"
+
+[[constraint]]
+  name = "github.com/valyala/fasthttp"
+  branch = "master"
