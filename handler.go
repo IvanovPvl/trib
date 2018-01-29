@@ -11,9 +11,7 @@ const validErrMessage = "number argument of type int is needed"
 
 func tribHandler() http.Handler {
 	mux := http.NewServeMux()
-
 	mux.HandleFunc("/trib", handleGetTrib)
-
 	return mux
 }
 
