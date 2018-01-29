@@ -53,4 +53,12 @@ func TestHandler(t *testing.T) {
 		JSON().
 		Object().
 		Equal(negResponse)
+
+	e.GET("/trib").
+		WithQuery("number", "a").
+		Expect().
+		Status(http.StatusBadRequest).
+		JSON().
+		Object().
+		Equal(errResponse)
 }

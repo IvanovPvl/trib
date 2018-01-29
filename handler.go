@@ -28,7 +28,7 @@ func handleGetTrib(w http.ResponseWriter, r *http.Request) {
 
 	number, err := strconv.Atoi(numberParam)
 	if err != nil {
-		sendError(w, err)
+		sendError(w, errors.New(validErrMessage))
 		return
 	}
 
